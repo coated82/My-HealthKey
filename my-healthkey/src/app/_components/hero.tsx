@@ -3,7 +3,7 @@ import Image from "next/image";
 export function Hero() {
   return (
     <section
-      style={{ backgroundColor: "#C62828" }} // ← ASSIM FUNCIONA
+      style={{ backgroundColor: "#C62828" }} 
       className="text-white relative overflow-hidden"
     >
       <div className="container mx-auto py-2 px-6">
