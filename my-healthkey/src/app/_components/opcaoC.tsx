@@ -153,7 +153,7 @@ export function OpcaoC() {
     }, [emblaApi, onSelect]);
 
     return (
-        <div className="relative group mt-6">
+        <div className="relative group mt-6 mb-24">
             <div className="ml-16 mt-4 mb-2">
                 <h1 className="text-3xl font-bold text-gray-800 font-mono">
                     Produto Top
