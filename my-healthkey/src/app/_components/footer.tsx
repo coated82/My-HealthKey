@@ -5,11 +5,11 @@ export function Footer() {
   return (
     <section
       style={{ background: "#1E1E1E" }}
-      className="py-16 text-white border-t border-red-500/20"
+      className="py-4 text-white border-t border-red-500/20"
     >
       <div className="container mx-auto px-4 max-w-7xl">
         <footer>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12 mt-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-4 mt-5">
             <div className="flex flex-col items-start">
               <h3 className="text-xl font-bold mb-3 text-red-500">
                 My-HealthKey
@@ -65,7 +65,7 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="border-t border-gray-700 my-8 w-full" />
+          <div className="border-t border-gray-700 my-4 w-full" />
 
           <div className="w-full text-[11px] text-gray-400 text-center leading-relaxed flex flex-col gap-2">
             <p className="max-w-4xl mx-auto">
