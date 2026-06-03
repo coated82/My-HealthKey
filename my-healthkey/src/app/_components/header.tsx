@@ -11,6 +11,10 @@ export function Header() {
         display: "flex",
         alignItems: "center",
         padding: "0 120px",
+        position: "sticky",
+        top: 0,
+        zIndex: 50, 
+        boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)"
       }}
     >
       <div
