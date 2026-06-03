@@ -80,13 +80,13 @@ export function HeroCarousel() {
     {
       id: 1,
       title: "20% OFF",
-      description: "Em toda linha de medicamentos",
+      description: "Em todos os pordutos da Loja A",
       bgColor: "#C62828",
     },
     {
       id: 2,
       title: "Frete Grátis",
-      description: "Nas compras acima de R$ 99",
+      description: "Nas filiais da Loja B",
       bgColor: "#2E7D32",
     },
     {
@@ -98,7 +98,7 @@ export function HeroCarousel() {
     {
       id: 4,
       title: "Até 3x sem juros",
-      description: "No cartão de crédito",
+      description: "No cartão de crédito na Loja C",
       bgColor: "#E65100",
     },
   ];
