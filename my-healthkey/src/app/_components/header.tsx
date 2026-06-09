@@ -1,7 +1,18 @@
+"use client";
+
+import { useRouter } from "next/navigation";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
 export function Header() {
+  const router = useRouter();
+
+  const handleLogoClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    router.push("/");
+  };
+
   return (
     <div
       style={{
@@ -13,16 +24,18 @@ export function Header() {
         padding: "0 120px",
         position: "sticky",
         top: 0,
-        zIndex: 50, 
-        boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)"
+        zIndex: 50,
+        boxShadow: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
       }}
     >
       <div
+        onClick={handleLogoClick}
         style={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           position: "relative",
+          cursor: "pointer",
         }}
       >
         <img
@@ -68,7 +81,7 @@ export function Header() {
       </div>
 
       <div style={{ display: "flex", gap: "12px", marginLeft: "auto" }}>
-        <Button 
+        <Button
           variant="outline"
           style={{
             borderColor: "#D32F2F",
@@ -78,7 +91,7 @@ export function Header() {
         >
           Entrar
         </Button>
-        <Button 
+        <Button
           style={{
             backgroundColor: "#D32F2F",
             color: "#FFFFFF",
