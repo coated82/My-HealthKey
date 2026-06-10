@@ -1,6 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 
@@ -81,24 +82,32 @@ export function Header() {
       </div>
 
       <div style={{ display: "flex", gap: "12px", marginLeft: "auto" }}>
-        <Button
-          variant="outline"
-          style={{
-            borderColor: "#D32F2F",
-            color: "#D32F2F",
-            backgroundColor: "transparent",
-          }}
-        >
-          Entrar
-        </Button>
-        <Button
-          style={{
-            backgroundColor: "#D32F2F",
-            color: "#FFFFFF",
-          }}
-        >
-          Cadastrar
-        </Button>
+        
+        <Link href="/login">
+          <Button
+            variant="outline"
+            style={{
+              borderColor: "#D32F2F",
+              color: "#D32F2F",
+              backgroundColor: "transparent",
+              cursor: "pointer",
+            }}
+          >
+            Entrar
+          </Button>
+        </Link>
+
+        <Link href="/registro">
+          <Button
+            style={{
+              backgroundColor: "#D32F2F",
+              color: "#FFFFFF",
+              cursor: "pointer",
+            }}
+          >
+            Cadastrar
+          </Button>
+        </Link>
       </div>
     </div>
   );
